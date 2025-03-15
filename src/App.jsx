@@ -1,10 +1,12 @@
-import Logo from './components/Logo';
 import Navbar from './components/Navbar';
+import ThemeToggler from "./components/ThemeToggler";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar>
+        <ThemeToggler/>
+      </Navbar>
     </>
   );
 }
