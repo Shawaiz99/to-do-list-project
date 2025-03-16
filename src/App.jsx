@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import ThemeToggler from "./components/ThemeToggler";
-import ListForm from './components/ListForm';
+import ToDoListCard from './components/ToDoListCard';
+
 
 function App() {
 
@@ -21,9 +22,7 @@ function App() {
       <Navbar>
         <ThemeToggler/>
       </Navbar>
-      <div className='d-flex justify-content-center'>
-        <ListForm />
-      </div>
+      <ToDoListCard />
     </>
   );
 }
