@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import ThemeToggler from "./components/ThemeToggler";
-import ToDoListCard from './components/ToDoListCard';
+import ToDoList from './components/ToDoList';
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Navbar>
         <ThemeToggler/>
       </Navbar>
-      <ToDoListCard />
+      <ToDoList />
     </>
   );
 }
