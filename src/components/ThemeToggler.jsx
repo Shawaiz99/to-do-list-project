@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
 
 function ThemeToggler() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   const themeToggler = () => {
     setTheme((prev) => prev === "light" ? "dark" : "light");

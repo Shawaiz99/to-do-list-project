@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import ThemeToggler from "./components/ThemeToggler";
 import ToDoList from './components/ToDoList';
+import ToDoListForm from './components/ToDoListForm';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
       <Navbar>
         <ThemeToggler/>
       </Navbar>
+      <div className='d-flex justify-content-center'>
+        <ToDoListForm />
+      </div>
       <ToDoList />
     </>
   );
