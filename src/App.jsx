@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
-import ThemeToggler from "./components/ThemeToggler";
+import ThemeToggler from './components/ThemeToggler';
 import ToDoList from './components/ToDoList';
 import ToDoListForm from './components/ToDoListForm';
 
-
 function App() {
-
   const [lists, setList] = useState([]);
 
   const addList = (newList) => {
@@ -15,18 +13,20 @@ function App() {
   };
 
   const removeList = () => {
-    setList(null);
-  }
+    setList([]);
+  };
 
   return (
     <>
       <Navbar>
-        <ThemeToggler/>
+        <ThemeToggler />
       </Navbar>
-      <div className='d-flex justify-content-center'>
-        <ToDoListForm />
+      <div className="d-flex justify-content-center flex-column align-items-center">
+        <div className="col-12 col-sm-11 col-md-10 col-lg-8 p-2">
+          <ToDoListForm />
+          <ToDoList />
+        </div>
       </div>
-      <ToDoList />
     </>
   );
 }
